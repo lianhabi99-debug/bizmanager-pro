@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>BizManager Pro</title>
+    <title>BizManager Pro — Akhdan Nur Syafi</title>
     <link rel="stylesheet" href="bisnis.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -22,7 +22,7 @@
         <!-- Top Bar -->
         <header id="topbar">
             <button id="sidebar-toggle"><i class="fas fa-bars"></i></button>
-            <div class="topbar-brand" id="topbar-brand">BizManager Pro</div>
+            <div class="topbar-brand" id="topbar-brand">BizManager Pro <span class="watermark">— Akhdan Nur Syafi</span></div>
             <div class="topbar-right">
                 <button id="theme-toggle" title="Toggle Theme"><i class="fas fa-moon"></i></button>
                 <button id="notif-btn" title="Notifications"><i class="fas fa-bell"></i><span id="notif-badge" class="badge hidden">0</span></button>
@@ -72,7 +72,6 @@
         <div id="notif-panel" class="hidden">
             <div class="notif-header"><h3>Notifications</h3><button id="notif-close"><i class="fas fa-times"></i></button></div>
             <div id="notif-list"></div>
-        </div>
 
         <!-- Floating Action Button -->
         <button id="fab" title="Quick Actions"><i class="fas fa-plus"></i></button>
@@ -84,9 +83,7 @@
 
         <!-- Toast Container -->
         <div id="toast-container"></div>
-    </div>
 
     <script src="bisnis.js"></script>
 </body>
 </html>
-

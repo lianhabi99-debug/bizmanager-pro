@@ -334,8 +334,8 @@ const App = {
             document.documentElement.setAttribute('data-theme', 'dark');
             $('theme-toggle').innerHTML = '<i class="fas fa-sun"></i>';
         }
-        const brand = $('topbar-brand');
-        if (brand) brand.textContent = s.businessName || 'BizManager Pro';
+const brand = $('topbar-brand');
+        if (brand) brand.innerHTML = (s.businessName || 'BizManager Pro') + ' <span class="watermark">— Akhdan Nur Syafi</span>';
     },
 
     setupListeners() {
@@ -1798,7 +1798,7 @@ const App = {
             document.documentElement.removeAttribute('data-theme');
             $('theme-toggle').innerHTML = '<i class="fas fa-moon"></i>';
         }
-        $('topbar-brand').textContent = settings.businessName;
+$('topbar-brand').innerHTML = (settings.businessName || 'BizManager Pro') + ' <span class="watermark">— Akhdan Nur Syafi</span>';
         showToast('Settings saved!');
     },
 
